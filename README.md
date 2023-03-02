@@ -1,4 +1,4 @@
-# Dashboard-Repository
+# Repository-Dashboards
 
 # Projects developed for application of ideas in the creation of data visualization panels.
 
