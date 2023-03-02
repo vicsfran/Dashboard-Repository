@@ -6,7 +6,7 @@
 
 - Dashboard Logistics: https://app.powerbi.com/viewr=eyJrIjoiMTQ0ZDhlY2MtZTM1Ny00NThmLTg2NzYtM2I3MmFiODgyMDU4IiwidCI6IjgyYTU4NjE2LTY4ZDYtNDA1MS05Y2E5LWIyY2U2YmE1MjEzNCJ9
 
-Metrics by Logistics:
+Metrics by Logistics and Linguage DAX used:
 
   # Placed Orders = count of orders placed.
   # Delivered Orders = count of orders, exclude those with blank delivery data.
@@ -18,12 +18,22 @@ Metrics by Logistics:
   # Order Cycle Time (OCT) = average days between order and delivery date. It aims to measure how long the company takes to make a delivery, from dispatch to arrival at the destination, that is, the overall efficiency of the operation.
 
   # On Time = number of orders delivered with a delivery date less than or equal to the expected date. Measures order timeliness.
+  
+      DAX: Qtd On time = CALCULATE([Notas fiscais], fNotasFiscais[On Time Delivery] = "On Time")
 
   # % On Time = proportion between orders On Time in relation to the total orders delivered.
 
+      DAX:  % On time = DIVIDE([Qtd On time], [Notas fiscais])
+
   # In Full = number of orders with zero occurrences of returns. Evaluates compliance with specifications agreed with the customer, such as quality, dimensions, quantity and price.
+  
+     DAX: Qtd In full = CALCULATE([Notas fiscais], fNotasFiscais[In Full Delivery] = "In full")
 
   # % In Full = proportion between In Full orders in relation to the total number of delivered orders.
+      
+      DAX: % In full = DIVIDE([Qtd In full], [Notas fiscais])
 
   # % OTIF = % On Time and % In Full multiplication. This segmentation makes it possible to identify whether the origin of the problem is in the delivery or in the     expedition. Low On Time means that there is a need to review the transport process or improve negotiation of expected delivery data. On the other hand, a low In Full may indicate problems in processing, sorting, packaging, checking or dispatching the products.
+  
+      DAX: OTIF = [% In full] * [% On time]
 
