@@ -8,14 +8,19 @@
 
 Metrics by Logistics and Linguage DAX used:
 
-  # Placed Orders = count of orders placed.
+  # Placed Orders = count of orders placed.7
+      
   # Delivered Orders = count of orders, exclude those with blank delivery data.
+      
+      DAX: Volume expedido = SUM(fNotasFiscais[Volumes])
 
   # Open Orders = accumulated value of the difference between orders placed and delivered over the period.
 
   # Order Fill Rate (OFR) = average of days between the order date and the CTE issuance date. Represents the time that the operation takes to pick an order, including all activities — from the recipient of the purchase order to shipment.
 
   # Order Cycle Time (OCT) = average days between order and delivery date. It aims to measure how long the company takes to make a delivery, from dispatch to arrival at the destination, that is, the overall efficiency of the operation.
+  
+      DAX: Tempo Médio Entrega = AVERAGE(fNotasFiscais[PrazoEntrega])
 
   # On Time = number of orders delivered with a delivery date less than or equal to the expected date. Measures order timeliness.
   
