@@ -2,7 +2,7 @@
 
 ### Projects developed for application of ideas in the creation of data visualization panels.
 
-- Dashboard Logistics: https://app.powerbi.com/view?r=eyJrIjoiMTQ0ZDhlY2MtZTM1Ny00NThmLTg2NzYtM2I3MmFiODgyMDU4IiwidCI6IjgyYTU4NjE2LTY4ZDYtNDA1MS05Y2E5LWIyY2U2YmE1MjEzNCJ9
+#### Dashboard Logistics: https://app.powerbi.com/view?r=eyJrIjoiMTQ0ZDhlY2MtZTM1Ny00NThmLTg2NzYtM2I3MmFiODgyMDU4IiwidCI6IjgyYTU4NjE2LTY4ZDYtNDA1MS05Y2E5LWIyY2U2YmE1MjEzNCJ9
 
 Metrics by Logistics and Linguage DAX used:
 
@@ -40,10 +40,9 @@ Metrics by Logistics and Linguage DAX used:
   
        DAX: OTIF = [% In full] * [% On time]
 
-_________________________________________________________________________________________________________________________
 
-- Dashboard Sales: https://app.powerbi.com/view?r=eyJrIjoiMDE3NWY4OTYtOTY0Yy00N2YzLWEyNmMtOWY2ODFhMzllMGJlIiwidCI6IjgyYTU4NjE2LTY4ZDYtNDA1MS05Y2E5LWIyY2U2YmE1MjEzNCJ9
+#### Dashboard Sales: https://app.powerbi.com/view?r=eyJrIjoiMDE3NWY4OTYtOTY0Yy00N2YzLWEyNmMtOWY2ODFhMzllMGJlIiwidCI6IjgyYTU4NjE2LTY4ZDYtNDA1MS05Y2E5LWIyY2U2YmE1MjEzNCJ9
 
-- Dashboard NPS: https://app.powerbi.com/view?r=eyJrIjoiNDhlZTg2MDQtMGMzZi00ZDJmLTkxOGYtZDY2ZGZlZTVhY2MwIiwidCI6IjgyYTU4NjE2LTY4ZDYtNDA1MS05Y2E5LWIyY2U2YmE1MjEzNCJ9
+#### Dashboard NPS: https://app.powerbi.com/view?r=eyJrIjoiNDhlZTg2MDQtMGMzZi00ZDJmLTkxOGYtZDY2ZGZlZTVhY2MwIiwidCI6IjgyYTU4NjE2LTY4ZDYtNDA1MS05Y2E5LWIyY2U2YmE1MjEzNCJ9
 
 
